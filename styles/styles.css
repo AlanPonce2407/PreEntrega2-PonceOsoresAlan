@@ -4,10 +4,11 @@
     box-sizing: border-box;
 }
 
-body, html {
+body,
+html {
     width: 100%;
     height: 100%;
-    overflow-x: hidden; 
+    overflow-x: hidden;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -20,7 +21,7 @@ header {
     height: 10%;
 }
 
-header nav li{
+header nav li {
     display: flex;
     position: sticky;
     text-align: center;
@@ -83,7 +84,7 @@ header nav li{
     align-items: center;
 }
 
-.hero-background .page-message{
+.hero-background .page-message {
     position: relative;
 }
 
@@ -103,6 +104,10 @@ header nav li{
     letter-spacing: 1px;
     color: crimson;
     margin: 0 0.5rem;
+}
+
+.navbar {
+    z-index: 1;
 }
 
 .navbar-brand {
@@ -149,7 +154,7 @@ footer {
     text-align: center;
     bottom: 2rem;
     right: 20rem;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .newsletter-form {
@@ -328,22 +333,26 @@ ul {
 
 /* MERCH */
 
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+}
+
 .product-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
     width: 22rem;
     margin-bottom: 2rem;
 }
 
 .product-text {
-    margin-top: 1rem;
+    margin: 1rem;
     z-index: 1;
+    position: relative;
+    left: 8%;
 }
 
 .merch-btn {
-    margin-top: 1rem;
+    margin-left: 4rem;
 }
 
 /* MEDIA QUERIES */
@@ -361,10 +370,21 @@ ul {
     }
 
     #page-message-mobile {
-        left: -5%;
+        left: 0%;
     }
 
-    /* LEGAL MQ */   
+    .navbar-brand {
+        height: 5rem;
+        width: 0;
+        margin-left: 40%;
+    }
+
+    .navbar-brand #logo {
+        top: 0;
+        left: 20px;
+    }
+
+    /* LEGAL MQ */
     .legal-splash {
         position: sticky;
     }
@@ -372,13 +392,14 @@ ul {
     .legal-btn {
         position: relative;
         left: -20%;
-        top: 7%;
+        top: 20%;
     }
 
     .legal-main img {
         width: 65%;
         left: 18%;
     }
+
     /* LEGAL MQ */
 
 
@@ -396,20 +417,22 @@ ul {
         left: 40%;
         top: 1%;
     }
+
     /* CAREERS MQ */
 
     /* MERCH MQ */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 2fr);
+        gap: 7rem;
+    }
+
     .product-wrapper {
         display: block;
     }
+
     .merch-splash {
         left: 0%;
-    }
-
-    .slider-wrapper {
-        position: relative;
-        max-width: 45rem;
-        margin: 0 auto;
     }
 
     .slider {
@@ -418,22 +441,20 @@ ul {
         scroll-snap-type: x mandatory;
         scroll-behavior: smooth;
         height: 100%;
+        display: flex; 
+        align-items: center; 
+        margin: 0 7rem;
+
     }
 
     .slider img {
         width: 100%;
-        flex: 1 0 100%;
         scroll-snap-align: start;
         object-fit: cover;
+        margin-left: 2rem;
+        
     }
 
-    .slider-nav {
-        display: flex;
-        column-gap: 1rem;
-        position: absolute;
-        transform: translateX(-50%);
-        z-index: 1;
-    }
 
     /* MERCH MQ */
 
@@ -463,8 +484,8 @@ ul {
     .newsletter {
         text-align: center;
         padding: 20px;
-        margin: 4rem -17.4rem; 
-        max-width: 80%; 
+        margin: 4rem -17.4rem;
+        max-width: 80%;
         left: 58.5%;
     }
 
