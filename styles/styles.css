@@ -12,6 +12,8 @@ html {
     font-family: 'Roboto', sans-serif;
 }
 
+/* HEADER */
+
 header {
     font-size: 14px;
     background-color: #474747;
@@ -56,19 +58,19 @@ header nav li {
 }
 
 .hero-background {
-    background-image: url(/img/backgrounds/arcade-pixel.png);
+    background-image: url(../img/backgrounds/arcade-pixel.png);
 }
 
 .careers-background {
-    background-image: url(/img/backgrounds/office-pixel.png)
+    background-image: url(../img/backgrounds/office-pixel.png)
 }
 
 .legal-background {
-    background-image: url(/img/backgrounds/legal-pixel2.png);
+    background-image: url(../img/backgrounds/legal-pixel2.png);
 }
 
 .merch-background {
-    background-image: url(/img/backgrounds/store-pixel.png);
+    background-image: url(../img/backgrounds/store-pixel.png);
 }
 
 .careers .page-message {
@@ -299,7 +301,7 @@ ul {
 /* ABOUT US */
 
 .about-us-body {
-    background-color: black !important; /* Add !important to override conflicting styles */
+    background-color: black !important;
 }
 
 .about-us-container {
