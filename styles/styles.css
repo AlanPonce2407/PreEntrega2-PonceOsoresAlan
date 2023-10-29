@@ -17,7 +17,6 @@ header {
     background-color: #474747;
     color: whitesmoke;
     text-align: center;
-    padding: 0.5% 0;
     height: 10%;
 }
 
@@ -32,6 +31,9 @@ header nav li {
     margin-top: 0.25rem;
 }
 
+.bg-secondary h1{
+    margin-bottom: 0 !important;
+}
 
 
 /* HOME */
@@ -243,8 +245,6 @@ ul {
     list-style: none;
 }
 
-/* HOME */
-
 /* CAREERS-LEGAL */
 
 .careers-main,
@@ -296,17 +296,21 @@ ul {
     left: 1%;
 }
 
-/* CAREERS-LEGAL */
+/* ABOUT US */
+
+.about-us-body {
+    background-color: black !important; /* Add !important to override conflicting styles */
+}
 
 .about-us-container {
     width: 100%;
     height: 91.6%;
-    background-color: black;
 }
 
 .about-us-text {
     position: absolute;
     background-color: white;
+    color: black !important;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -328,8 +332,6 @@ ul {
     color: #8a8a8a;
     letter-spacing: 2px;
 }
-
-/* ABOUT US */
 
 /* MERCH */
 
