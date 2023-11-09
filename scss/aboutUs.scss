@@ -1,11 +1,8 @@
 $textGray: #8a8a8a;
+$blackImportant: black !important;
 
 .about-us-body {
-    background-color: black !important;
-}
-
-.about-us-body {
-    background-color: black !important;
+    background-color: $blackImportant;
 }
 
 .about-us-container {
@@ -16,7 +13,7 @@ $textGray: #8a8a8a;
 .about-us-text {
     position: absolute;
     background-color: white;
-    color: black !important;
+    color: $blackImportant;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
