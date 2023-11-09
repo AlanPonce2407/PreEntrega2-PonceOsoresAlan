@@ -1,0 +1,134 @@
+@media (max-width: 600px) {
+    .page-message {
+        position: relative;
+        margin: 1rem;
+        left: 0%;
+        font-size: 1.3rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .hero-background {
+        left: 10%;
+
+        .page-message {
+            left: 10%;
+        }
+    }
+
+    #page-message-mobile {
+        left: 0%;
+    }
+
+    .navbar-brand {
+        height: 5rem;
+        width: 0;
+        margin-left: 40%;
+
+        #logo {
+            top: 0;
+            left: 20px;
+        }
+    }
+
+    /* LEGAL MQ */
+    .legal-splash {
+        position: sticky;
+    }
+
+    .legal-btn {
+        position: relative;
+        left: -20%;
+        top: 20%;
+    }
+
+    .legal-main img {
+        width: 65%;
+        left: 18%;
+    }
+
+    /* CAREERS MQ */
+    .careers-splash {
+        left: 0%;
+
+        img {
+            width: 95%;
+            left: 3%;
+        }
+    }
+
+    .cv-btn {
+        left: 40%;
+        top: 1%;
+    }
+
+    /* MERCH MQ */
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 2fr);
+        gap: 7rem;
+    }
+
+    .product-wrapper {
+        display: block;
+    }
+
+    .merch-splash {
+        left: 0%;
+    }
+
+    .slider {
+        display: block;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        scroll-behavior: smooth;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        margin: 0 7rem;
+
+        img {
+            width: 100%;
+            scroll-snap-align: start;
+            object-fit: cover;
+            margin-left: 2rem;
+        }
+    }
+
+    /* ABOUT US MQ */
+    .about-us-text {
+        width: 85%;
+        padding-bottom: 20px;
+
+        h1 {
+            margin-bottom: 1rem;
+        }
+
+        button {
+            margin: 1rem auto;
+        }
+    }
+
+    footer {
+        height: 70vh;
+    }
+
+    .icons {
+        margin-left: -1.25rem;
+        left: 29.5%;
+    }
+
+    .newsletter {
+        text-align: center;
+        padding: 20px;
+        margin: 4rem -17.4rem;
+        max-width: 80%;
+        left: 58.5%;
+    }
+
+    #logo {
+        display: flex;
+        left: 0%;
+        top: -38%;
+        width: 4rem;
+    }
+}

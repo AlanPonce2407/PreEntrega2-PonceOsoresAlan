@@ -1,0 +1,21 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+}
+
+.product-card {
+    text-align: center;
+    width: 22rem;
+    margin-bottom: 2rem;
+}
+
+.product-text {
+    margin: 1rem;
+    z-index: 1;
+    position: relative;
+    left: 8%;
+}
+
+.merch-btn {
+    margin-left: 4rem;
+}

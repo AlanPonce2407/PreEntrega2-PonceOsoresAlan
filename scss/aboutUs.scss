@@ -1,0 +1,40 @@
+$textGray: #8a8a8a;
+
+.about-us-body {
+    background-color: black !important;
+}
+
+.about-us-body {
+    background-color: black !important;
+}
+
+.about-us-container {
+    width: 100%;
+    height: 91.6%;
+}
+
+.about-us-text {
+    position: absolute;
+    background-color: white;
+    color: black !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 30%;
+    width: 30%;
+    text-align: center;
+    padding: 1rem;
+
+    h1 {
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        margin: 1rem;
+    }
+
+    p {
+        color: $textGray;
+        letter-spacing: 2px;
+    }
+}

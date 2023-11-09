@@ -1,0 +1,64 @@
+$pagesMain:(
+    position: sticky,
+    left: 35%,
+    margin-bottom: 5rem
+);
+
+$pagesMessage:(margin-top: 1rem,
+    text-align: center,
+    letter-spacing: 1px,
+    line-height: 2rem,
+);
+
+$cvLegalBtn:(
+    position: relative,
+    margin: 0 auto,
+    left: 16%,
+    top: 190px
+);
+
+.careers-main {
+    img {
+        @each $property, $value in $pagesMain {
+            #{$property}: $value;
+        }
+    }
+}
+
+.legal-main {
+    img {
+        @each $property, $value in $pagesMain {
+            #{$property}: $value;
+        }
+        width: 32%;
+    }
+}
+
+.careers-message,
+.legal-message,
+#merch-message {
+    @each $property, $value in $pagesMessage {
+        #{$property}: $value;
+    }
+}
+
+.cv-btn,
+.legal-btn {
+    @each $property, $value in $cvLegalBtn {
+        #{$property}: $value;
+    }
+}
+
+.legal-disclaimer {
+    text-align: center;
+    font-size: 14px;
+    margin: 4rem 0;
+    font-style: italic;
+    width: 50%;
+    position: sticky;
+    left: 25%;
+    .page-message {
+        position: relative;
+        left: 1%;
+    }
+}
