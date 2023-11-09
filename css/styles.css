@@ -21,13 +21,17 @@ header {
     position: sticky;
     text-align: center;
     justify-content: space-evenly;
-    width: 70%;
+    width: 80%;
     left: 15.5%;
     padding: 0.5rem;
     margin-top: 0.25rem; }
 
 .bg-secondary h1 {
   margin-bottom: 0 !important; }
+
+.container {
+  position: relative;
+  left: -2%; }
 
 .hero-background,
 .careers-background,
@@ -237,9 +241,6 @@ ul {
   .legal-disclaimer .page-message {
     position: relative;
     left: 1%; }
-
-.about-us-body {
-  background-color: black !important; }
 
 .about-us-body {
   background-color: black !important; }
