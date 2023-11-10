@@ -1,16 +1,17 @@
-$pagesMain:(
+$pagesMain: (
     position: sticky,
     left: 35%,
     margin-bottom: 5rem
 );
 
-$pagesMessage:(margin-top: 1rem,
+$pagesMessage: (
+    margin-top: 1rem,
     text-align: center,
     letter-spacing: 1px,
     line-height: 2rem,
 );
 
-$cvLegalBtn:(
+$cvLegalBtn: (
     position: relative,
     margin: 0 auto,
     left: 16%,
@@ -30,6 +31,7 @@ $cvLegalBtn:(
         @each $property, $value in $pagesMain {
             #{$property}: $value;
         }
+
         width: 31%;
     }
 }
@@ -57,6 +59,7 @@ $cvLegalBtn:(
     width: 50%;
     position: sticky;
     left: 25%;
+
     .page-message {
         position: relative;
         left: 1%;
