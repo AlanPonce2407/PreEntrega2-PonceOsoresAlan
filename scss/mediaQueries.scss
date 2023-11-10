@@ -1,4 +1,42 @@
+@mixin slider-styles {
+    display: block;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 7rem;
+
+    img {
+        width: 100%;
+        scroll-snap-align: start;
+        object-fit: cover;
+        margin-left: 2rem;
+    }
+}
+
+
 @media (max-width: 600px) {
+    /* HEADER */
+    .container {
+        position: relative;
+        left: -120px;
+
+        #logo {
+            width: 4rem;
+        }
+
+        .navbar-brand {
+            position: relative;
+            left: -16%;
+            top: 5%;
+        }
+    }
+
+
+
+
     .page-message {
         position: relative;
         margin: 1rem;
@@ -77,21 +115,7 @@
     }
 
     .slider {
-        display: block;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        margin: 0 7rem;
-
-        img {
-            width: 100%;
-            scroll-snap-align: start;
-            object-fit: cover;
-            margin-left: 2rem;
-        }
+        @include slider-styles();
     }
 
     /* ABOUT US MQ */
@@ -122,7 +146,8 @@
         padding: 20px;
         margin: 4rem -17.4rem;
         max-width: 80%;
-        left: 58.5%;
+        left: 64.5%;
+        top: 45%;
     }
 
     #logo {
@@ -131,4 +156,153 @@
         top: -38%;
         width: 4rem;
     }
+}
+
+/* Tablet MQ */
+
+@media (min-width: 601px) and (max-width: 700px) {
+
+    /* HEADER */
+    .container {
+        position: relative;
+        left: -8%;
+
+        #logo {
+            width: 65%;
+        }
+
+        .navbar-brand {
+            position: relative;
+            left: -11%;
+            top: 5%;
+        }
+    }
+
+    /*FOOTER */
+    .newsletter {
+        right: 22rem;
+        bottom: 0.75rem;
+        width: 20rem;
+        height: 14rem;
+    }
+
+    .icons {
+        left: 55%;
+        top: 10%;
+    }
+
+    /* HOME */
+    .slider {
+        @include slider-styles();
+        position: relative;
+        left: 1%;
+    }
+
+    /* LEGAL */
+
+    .legal-main {
+        img {
+            width: 75%;
+            left: 12%;
+        }
+
+        .legal-btn {
+            left: -30%;
+        }
+    }
+
+    /* CAREERS */
+    .careers-main {
+        img {
+            left: 14%;
+        }
+
+        .cv-btn {
+            left: -34%;
+        }
+    }
+
+    /* MERCH */
+    .product-card {
+        width: 32rem;
+        .product-text {
+            left: 5%;
+        }
+    }
+
+    /* ABOUT US */
+    .about-us-text {
+        position: relative;
+        height: 40%;
+        width: 70%;
+    }
+}
+
+
+@media (min-width: 701px) and (max-width: 1024px){
+
+    /* HEADER */
+    .container{
+        left: -7%;
+        #logo {
+            width: 30%;
+        }
+    }
+
+
+    /* FOOTER */
+    .newsletter {
+        top: 0.5rem;
+        left: 7%;
+    }
+
+    /* HOME */
+
+    .slider {
+        @include slider-styles();
+        img {
+            width: 24rem;
+            height: 20rem;
+        }
+    }
+
+    /* LEGAL */
+
+    .legal-main {
+        img{
+            width: 60%;
+            left: 20%;
+        }
+        .legal-btn{
+            left: -13%;
+        }
+    }
+
+    /* CAREERS */
+
+    .careers-main {
+        img{
+            left: 22%;
+        }
+
+        .cv-btn {
+            left: -12%;
+        }
+    }
+
+    /* ABOUT US */
+    .about-us-text {
+        position: relative;
+        height: 52%;
+        width: 30%;
+    }
+
+    /* MERCH */
+    .slider {
+        margin: 10px 0;
+        img {
+            width: 20rem;
+        }
+    }
+
 }

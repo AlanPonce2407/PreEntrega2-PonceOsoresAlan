@@ -30,7 +30,7 @@ $cvLegalBtn:(
         @each $property, $value in $pagesMain {
             #{$property}: $value;
         }
-        width: 32%;
+        width: 31%;
     }
 }
 

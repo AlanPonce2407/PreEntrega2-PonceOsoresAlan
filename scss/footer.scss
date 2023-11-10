@@ -13,9 +13,9 @@ footer {
     color: whitesmoke;
     position: absolute;
     text-align: center;
-    bottom: 2rem;
-    right: 20rem;
     padding: 20px;
+    left: 20%;
+    top: 5%;
 }
 
 .newsletter-form {
@@ -57,7 +57,7 @@ footer {
 .icons {
     position: relative;
     top: 2rem;
-    left: 20%;
+    left: 65%;
     width: 18rem;
     background-color: $footerGray;
     padding: 1rem;

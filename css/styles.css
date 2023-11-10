@@ -130,9 +130,9 @@ footer {
   color: whitesmoke;
   position: absolute;
   text-align: center;
-  bottom: 2rem;
-  right: 20rem;
-  padding: 20px; }
+  padding: 20px;
+  left: 20%;
+  top: 5%; }
 
 .newsletter-form {
   display: flex;
@@ -168,7 +168,7 @@ footer {
 .icons {
   position: relative;
   top: 2rem;
-  left: 20%;
+  left: 65%;
   width: 18rem;
   background-color: #474747;
   padding: 1rem;
@@ -213,7 +213,7 @@ ul {
   position: sticky;
   left: 35%;
   margin-bottom: 5rem;
-  width: 32%; }
+  width: 31%; }
 
 .careers-message,
 .legal-message,
@@ -250,13 +250,13 @@ ul {
   height: 91.6%; }
 
 .about-us-text {
-  position: absolute;
+  position: relative;
   background-color: white;
   color: black !important;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  height: 30%;
+  height: 40%;
   width: 30%;
   text-align: center;
   padding: 1rem; }
@@ -287,6 +287,16 @@ ul {
   margin-left: 4rem; }
 
 @media (max-width: 600px) {
+  /* HEADER */
+  .container {
+    position: relative;
+    left: -120px; }
+    .container #logo {
+      width: 4rem; }
+    .container .navbar-brand {
+      position: relative;
+      left: -16%;
+      top: 5%; }
   .page-message {
     position: relative;
     margin: 1rem;
@@ -366,9 +376,120 @@ ul {
     padding: 20px;
     margin: 4rem -17.4rem;
     max-width: 80%;
-    left: 58.5%; }
+    left: 64.5%;
+    top: 45%; }
   #logo {
     display: flex;
     left: 0%;
     top: -38%;
     width: 4rem; } }
+
+/* Tablet MQ */
+@media (min-width: 601px) and (max-width: 700px) {
+  /* HEADER */
+  .container {
+    position: relative;
+    left: -8%; }
+    .container #logo {
+      width: 65%; }
+    .container .navbar-brand {
+      position: relative;
+      left: -11%;
+      top: 5%; }
+  /*FOOTER */
+  .newsletter {
+    right: 22rem;
+    bottom: 0.75rem;
+    width: 20rem;
+    height: 14rem; }
+  .icons {
+    left: 55%;
+    top: 10%; }
+  /* HOME */
+  .slider {
+    display: block;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 7rem;
+    position: relative;
+    left: 1%; }
+    .slider img {
+      width: 100%;
+      scroll-snap-align: start;
+      object-fit: cover;
+      margin-left: 2rem; }
+  /* LEGAL */
+  .legal-main img {
+    width: 75%;
+    left: 12%; }
+  .legal-main .legal-btn {
+    left: -30%; }
+  /* CAREERS */
+  .careers-main img {
+    left: 14%; }
+  .careers-main .cv-btn {
+    left: -34%; }
+  /* MERCH */
+  .product-card {
+    width: 32rem; }
+    .product-card .product-text {
+      left: 5%; }
+  /* ABOUT US */
+  .about-us-text {
+    position: relative;
+    height: 40%;
+    width: 70%; } }
+
+@media (min-width: 701px) and (max-width: 1024px) {
+  /* HEADER */
+  .container {
+    left: -7%; }
+    .container #logo {
+      width: 30%; }
+  /* FOOTER */
+  .newsletter {
+    top: 0.5rem;
+    left: 7%; }
+  /* HOME */
+  .slider {
+    display: block;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 7rem; }
+    .slider img {
+      width: 100%;
+      scroll-snap-align: start;
+      object-fit: cover;
+      margin-left: 2rem; }
+    .slider img {
+      width: 24rem;
+      height: 20rem; }
+  /* LEGAL */
+  .legal-main img {
+    width: 60%;
+    left: 20%; }
+  .legal-main .legal-btn {
+    left: -13%; }
+  /* CAREERS */
+  .careers-main img {
+    left: 22%; }
+  .careers-main .cv-btn {
+    left: -12%; }
+  /* ABOUT US */
+  .about-us-text {
+    position: relative;
+    height: 52%;
+    width: 30%; }
+  /* MERCH */
+  .slider {
+    margin: 10px 0; }
+    .slider img {
+      width: 20rem; } }
