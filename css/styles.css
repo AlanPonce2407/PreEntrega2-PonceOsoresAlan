@@ -516,3 +516,45 @@ ul {
     margin: 10px 0; }
     .slider img {
       width: 20rem; } }
+
+@media (min-width: 1025px) and (max-width: 1366px) {
+  /* FOOTER */
+  .newsletter {
+    height: 95%;
+    top: 2.5%; }
+  .icons {
+    height: 95%;
+    top: 6px; }
+  /* HOME */
+  .slider {
+    display: block;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 7rem;
+    position: relative;
+    left: 1%; }
+    .slider img {
+      width: 100%;
+      scroll-snap-align: start;
+      object-fit: cover;
+      margin-left: 2rem; }
+    .slider img {
+      width: 29%; }
+  /* CAREERS */
+  .careers-main img {
+    left: 30%; }
+  .careers-main .cv-btn {
+    left: 3%; }
+  /* MERCH */
+  .product-card {
+    margin-left: 2rem; }
+    .product-card img {
+      width: 100%; }
+  /* ABOUT US */
+  .about-us-text {
+    height: 45%;
+    width: 40%; } }
