@@ -27,15 +27,32 @@
             width: 4rem;
         }
 
+        .navbar-toggler {
+            border: 3px solid red;
+            position: relative;
+            left: -20%;
+        }
+
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+
+        .navbar-toggler {
+            border: 2px solid red;
+        }
+
         .navbar-brand {
             position: relative;
             left: -16%;
             top: 5%;
         }
+
+        .navbar-collapse{
+            position: relative;
+            left: 14%;
+        }
     }
-
-
-
 
     .page-message {
         position: relative;
@@ -76,7 +93,7 @@
     .legal-btn {
         position: relative;
         left: -20%;
-        top: 20%;
+        top: 9rem;
     }
 
     .legal-main img {
@@ -87,16 +104,23 @@
     /* CAREERS MQ */
     .careers-splash {
         left: 0%;
-
         img {
             width: 95%;
             left: 3%;
         }
     }
 
+    .careers-main{
+        img {
+            position: relative;
+            left: 2%;
+        }
+    }
+
     .cv-btn {
         left: 40%;
         top: 1%;
+        margin-bottom: 2rem;
     }
 
     /* MERCH MQ */
