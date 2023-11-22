@@ -159,7 +159,6 @@ footer {
 .newsletter {
   background-color: #474747;
   color: whitesmoke;
-  position: absolute;
   text-align: center;
   padding: 20px;
   left: 20%;
@@ -197,7 +196,6 @@ footer {
   text-align: center; }
 
 .icons {
-  position: relative;
   top: 2rem;
   left: 65%;
   width: 18rem;
@@ -317,6 +315,13 @@ ul {
 .merch-btn {
   margin-left: 4rem; }
 
+/* FOOTER MOBILE */
+@media (min-width: 300px) {
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
 @media (max-width: 600px) {
   /* HEADER */
   .container {
@@ -339,6 +344,7 @@ ul {
     .container .navbar-collapse {
       position: relative;
       left: 14%; }
+  /* MAIN */
   .page-message {
     position: relative;
     margin: 1rem;
@@ -440,6 +446,14 @@ ul {
     .navbar-brand #logo {
       top: 0;
       left: 20px; }
+  .container .navbar-toggler {
+    border: 3px solid red;
+    position: relative;
+    left: -20%; }
+  .container .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  .container .navbar-toggler {
+    border: 2px solid red; }
   .container .nav-link {
     position: relative;
     left: -100%;
@@ -458,13 +472,21 @@ ul {
       position: relative;
       left: -11%;
       top: 5%; }
+    .container .navbar-toggler {
+      border: 3px solid red;
+      position: relative;
+      left: -20%; }
+    .container .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+    .container .navbar-toggler {
+      border: 2px solid red; }
   /* FOOTER */
   footer {
     height: 75vh; }
   .newsletter {
-    top: 20rem;
     width: 20rem;
-    height: 14rem; }
+    height: 14rem;
+    margin: 3rem auto; }
   .icons {
     left: 23%;
     top: 10%; }
@@ -513,12 +535,24 @@ ul {
     left: -7%; }
     .container #logo {
       width: 30%; }
+    .container .navbar-toggler {
+      border: 3px solid red;
+      position: relative;
+      left: -20%; }
+    .container .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='red' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+    .container .navbar-toggler {
+      border: 2px solid red; }
   /* FOOTER */
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 2rem; }
   footer {
     height: 35vh; }
   .newsletter {
-    top: 0.5rem;
-    left: 7%; }
+    margin-top: 1rem; }
   /* HOME */
   .slider {
     display: block;
@@ -559,14 +593,15 @@ ul {
     .slider img {
       width: 20rem; } }
 
+@media (min-width: 1025px) {
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    .footer-container .newsletter {
+      margin-top: 1.5rem; } }
+
 @media (min-width: 1025px) and (max-width: 1366px) {
-  /* FOOTER */
-  .newsletter {
-    height: 95%;
-    top: 2.5%; }
-  .icons {
-    height: 95%;
-    top: 6px; }
   /* HOME */
   .slider {
     display: block;
