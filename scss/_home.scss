@@ -3,7 +3,8 @@ $red: crimson;
 .hero-background,
 .careers-background,
 .legal-background,
-.merch-background {
+.merch-background,
+.about-us-background {
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -32,6 +33,11 @@ $red: crimson;
 
 .merch-background {
     background-image: url(../img/backgrounds/store-pixel.png);
+}
+
+.about-us-background {
+    background-image: url(../img/backgrounds/about-us.jpg);
+    height: 90vh;
 }
 
 .careers {

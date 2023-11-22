@@ -31,12 +31,16 @@ header {
 
 .container {
   position: relative;
-  left: -2%; }
+  left: -10%; }
+
+.nav-link {
+  width: 7rem; }
 
 .hero-background,
 .careers-background,
 .legal-background,
-.merch-background {
+.merch-background,
+.about-us-background {
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -60,6 +64,10 @@ header {
 
 .merch-background {
   background-image: url(../img/backgrounds/store-pixel.png); }
+
+.about-us-background {
+  background-image: url(../img/backgrounds/about-us.jpg);
+  height: 90vh; }
 
 .careers .page-message {
   margin: 0 auto; }
@@ -405,10 +413,11 @@ ul {
     .about-us-text button {
       margin: 1rem auto; }
   footer {
-    height: 70vh; }
+    height: 75vh; }
   .icons {
     margin-left: -1.25rem;
     left: 29.5%; }
+  /* FOOTER */
   .newsletter {
     text-align: center;
     padding: 20px;
@@ -420,6 +429,21 @@ ul {
     display: flex;
     left: 0%;
     top: -38%;
+    width: 4rem; } }
+
+/* HEADER ADJUSTMENTS */
+@media (min-width: 576px) and (max-width: 601px) {
+  .navbar-brand {
+    height: 5rem;
+    width: 0;
+    margin-left: 40%; }
+    .navbar-brand #logo {
+      top: 0;
+      left: 20px; }
+  .container .nav-link {
+    position: relative;
+    left: -100%;
+    font-size: 10px;
     width: 4rem; } }
 
 /* Tablet MQ */
@@ -434,14 +458,15 @@ ul {
       position: relative;
       left: -11%;
       top: 5%; }
-  /*FOOTER */
+  /* FOOTER */
+  footer {
+    height: 75vh; }
   .newsletter {
-    right: 22rem;
-    bottom: 0.75rem;
+    top: 20rem;
     width: 20rem;
     height: 14rem; }
   .icons {
-    left: 55%;
+    left: 23%;
     top: 10%; }
   /* HOME */
   .slider {
@@ -489,6 +514,8 @@ ul {
     .container #logo {
       width: 30%; }
   /* FOOTER */
+  footer {
+    height: 35vh; }
   .newsletter {
     top: 0.5rem;
     left: 7%; }
